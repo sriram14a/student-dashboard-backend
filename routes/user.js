@@ -300,7 +300,7 @@ router.post("/portfolio", async (req, res) => {
   const port = await getPort(email);
   
   if (port) {
-    const updated = await updateport(email, git, portfolio, resume);
+   await updateport(email, git, portfolio, resume);
 
     res.status(200).json({ status: "ok" });
   } else {
