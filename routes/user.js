@@ -133,7 +133,7 @@ router.post("/forgotpassword", async (req, res) => {
           expiresIn: "5m",
         }
       );
-      const link = `http://localhost:8000/user/reset-password/${oldUser.email}/${token}`;
+      const link = `https://student-dashboard-ubi2.onrender.com/user/reset-password/${oldUser.email}/${token}`;
       var transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
