@@ -295,6 +295,6 @@ router.put("/capstone/:id", async (req, res) => {
   } catch {
     res.status(404).json({ message: "failed to update" });
   }
-});
+})
 
 export const adminRouter = router;
